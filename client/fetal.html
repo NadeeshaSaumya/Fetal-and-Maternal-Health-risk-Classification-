@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research Webpage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="fetal.js"></script>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+			  
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>BabyBloom</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="fetal.html" class="nav-item nav-link active">Fetal Health</a>
+                        <a href="maternal.html" class="nav-item nav-link">Maternal Health</a>
+                   
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Service</h5>
+                <h1 class="display-4">Predict Your Fetal Health State</h1>
+            </div>
+		</div>
+	</div>
+		
+	<!-- form Start -->
+	
+    <div class="container-fluid bg-primary my-1 py-5">
+        <div class="container py-4">
+            <div class="row gx-10">
+                
+                        <form>
+                            <div class="row row-cols-3" >
+                                <div class="col" ><h5> Abnormal Short-term Variability(%) </h5>
+                                    <input type="text" id="uiAstv" class="form-control bg-light border-0"  placeholder="Percentage of Abnormal Short-term Variability" style="height: 55px;" value = 73>
+                                </div>
+                                <div class="col"><h5> Abnormal Long-term Variability(%) </h5>
+                                    <input type="text" id="uiAltv" class="form-control bg-light border-0" placeholder="Percentage of Abnormal Long-term Variability" style="height: 55px;" value = 43>
+                                </div>
+                                <div class="col"><h5> Accelarations </h5>
+                                    <input type="text" id="uiAcce" class="form-control bg-light border-0" placeholder="Accelarations per second" style="height: 55px;" value = 0>
+                                </div>
+								
+								<div class="col"><h5 style="margin-top: 20px;"> Histogram Median </h5>
+                                    <input type="text" id="uiMedian" class="form-control bg-light border-0" placeholder="Median of FHR Histogram" style="height: 55px;" value = 121>
+                                </div>
+								
+								<div class="col"><h5 style="margin-top: 20px;"> Histogram Mean  </h5>
+                                    <input type="text" id="uiMean" class="form-control bg-light border-0" placeholder="Mean value of FHR Histogram" style="height: 55px;" value = 137>
+                                </div>
+                                <div class="col"><h5 style="margin-top: 20px;"> Mean of Short-term Variability</h5>
+                                    <input type="text" id="uiMstv" class="form-control bg-light border-0" placeholder="Mean of Short-term Variability" style="height: 55px;" value = 0.5>
+                                </div>
+                                <div class="col" ><h5 style="margin-top: 20px;"> Prolongued Decelerations </h5>
+                                    <input type="text" id="uiDp" class="form-control bg-light border-0"  placeholder="Prolongued Decelerations" style="height: 55px;" value = 0>
+                                </div>
+                                <div class="col"><h5 style="margin-top: 20px;"> Histogram Mode </h5>
+                                    <input type="text" id="uiMode" class="form-control bg-light border-0" placeholder="Mode of FHR Histogram" style="height: 55px;" value = 120>
+                                </div>
+                                <div class="col"><h5 style="margin-top: 20px;"> High Frequecy of the Histogram </h5>
+                                    <input type="text" id="uiMax" class="form-control bg-light border-0" placeholder="High Frequecy of FHR Histogram" style="height: 55px;" value = 126>
+                                </div>
+								
+								<div class="col"><h5 style="margin-top: 20px;"> Light Decelerations</h5>
+                                    <input type="text" id="uiDl" class="form-control bg-light border-0" placeholder="Light Decelerations" style="height: 55px;" value = 120>
+                                </div>
+								
+								<div class="col"><h5 style="margin-top: 20px;"> Mean of Long-term Variability</h5>
+                                    <input type="text" id="uiMltv" class="form-control bg-light border-0" placeholder="Mean of Long-term Variability" style="height: 55px;" value = 2.4>
+                                </div>
+                                <div class="col"><h5 style="margin-top: 20px;"> Uterine Contractions </h5>
+                                    <input type="text" id="uiUc" class="form-control bg-light border-0" placeholder="Uterine Contractions" style="height: 55px;" value = 0>
+                                </div>
+                                
+                                    <button style="margin-top: 20px;" class="btn btn-primary w-100 py-3" onclick="onClickedPredictFetalalHealth()" type="button" >Predict the Fetal Health State</button>
+                                    <div id="uiEstimatedFState"  class="result2">     <h2></h2> </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form End -->	
+ <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
+                    <p class="mb-4">Contact me if you need to know more information!</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Nadeesha Saumya</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>University of Colombo</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>2018s16835@stu.cmb.ac.lk</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+94 7027365</p>
+                </div>
+                
+				<div class="col-lg-3 col-md-6">
+                    <img class="img" src="img/health1.jpg" style="object-fit: cover;">
+                </div> 
+             
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+</body>
+
+</html>
